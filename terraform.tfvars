@@ -7,6 +7,5 @@ vpc_id            = "vpc-09e7347de47bf9da1"
 ebs_volume        = 30
 ec2_tag           = "First-Instance"
 sg_tag            = "First-SG"
-iam_role          = "ssm_role"
 
-ports = [22, 80, 5000]
+ports = [22, 80, 443]
