@@ -29,3 +29,7 @@ resource "aws_eip_association" "new_ip" {
   instance_id   = aws_instance.Demo.id
   allocation_id = aws_eip.new.id
 }
+
+output "instance_public_ip" {
+  value = aws_eip.new.public_ip
+}
